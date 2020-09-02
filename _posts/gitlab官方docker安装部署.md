@@ -3,6 +3,7 @@ title: gitlab官方docker安装部署
 author: 高思强
 date: 2019-09-29 19:34:43
 comments: true
+tag:
 ---
 # gitlab官方docker安装部署
 
