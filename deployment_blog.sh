@@ -6,7 +6,7 @@ while (( 1 == 1 ))
 do
 
     $pull_res = $(git pull)
-    if [ "$go_install_packages" != "0" ]
+    if [ "$go_install_packages" != "Already up-to-date." ]
     then
         hexo clean
         hexo generate
