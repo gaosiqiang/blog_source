@@ -5,12 +5,12 @@ date: 2017-11-28 01:25:00
 comments: true
 ---
 
-###准备工作
+### 准备工作
 ```code
 docker pull centos 下拉镜像
 docker run centos:latest /bin/bash 启动容器
 ```
-###容器内部安装以下依赖
+### 容器内部安装以下依赖
 ```code
 $ sudo yum -y install openssh-server
 $ sudo yum -y install openssh-clients
@@ -22,15 +22,15 @@ passwd
 ```
 
 >ps:只有重置密码才能使用（如提示没有passwd这个命令行使用yum install passwd安装）和 ps -aux | grep sshd 查看sshd状态或者netstat -ant |grep 22也可以,ssh默认是端口号是22
-####完成后重启容器
+#### 完成后重启容器
 ```code
 $ docker run -it -p 5000:22 contos:latest /bin/bash
 ```
-####ssh连接docker容器
+#### ssh连接docker容器
 ```code
 $ ssh -p 5000 root@127.0.0.1
 ```
-###配置:
+### 配置:
 修改SSH配置文件以下选项，去掉#注释，将四个选项启用：
 ```code
 $ vi /etc/ssh/sshd_config
@@ -40,7 +40,7 @@ $ vi /etc/ssh/sshd_config
 - AuthorizedKeysFile .ssh/authorized_keys #公钥文件路径（和上面生成的文件同）
 - PermitRootLogin yes #root能使用ssh登录
 
-###实录中常见错误处理:
+### 实录中常见错误处理:
 ```code
 //容器内启动sshd服务时
 $ service sshd restart或者systemctl start sshd
@@ -82,7 +82,7 @@ Host key verification failed.
 vim ~/.ssh/known_hosts
 删除与连接ip相关的数据即可
 
-###拓展
+### 拓展
 ```code
 ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key
 ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
