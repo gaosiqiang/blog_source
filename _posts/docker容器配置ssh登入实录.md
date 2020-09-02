@@ -4,7 +4,8 @@ author: 高思强
 date: 2017-11-28 01:25:00
 comments: true
 tags:
-- [docker, ssh]
+- [docker, 管理]
+- [ssh]
 categories:
 - 运维
 ---
