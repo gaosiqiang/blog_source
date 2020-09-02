@@ -3,6 +3,10 @@ title: docker容器配置ssh登入实录
 author: 高思强
 date: 2017-11-28 01:25:00
 comments: true
+tags:
+- [docker,ssh]
+categories:
+- 运维
 ---
 
 # docker容器配置ssh登入实录
