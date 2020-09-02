@@ -1,4 +1,11 @@
-
+---
+title: ios内购支付
+author: 高思强
+date: 2018-04-23 19:22:26
+comments: true
+tags:
+categories:
+---
 # ios内购支付
 ## 项目背景
 > 因苹果平台发布的app内上架虚拟商品必须经过苹果支付平台体系，固需要设计苹果ios平台支付
