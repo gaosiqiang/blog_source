@@ -28,3 +28,7 @@ service->>apple: check signature 请求验证支付签名
 apple->>apple: 验证签名
 apple->>service: return res 返回验证结果
 ```
+
+## 公式
+
+$$\sqrt{2} \quad and \quad \sqrt[n]{3}$$ = 1
