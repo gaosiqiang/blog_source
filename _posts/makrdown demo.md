@@ -25,6 +25,14 @@ Task in sec      :2014-01-12  , 12d
 anther task      : 24d
 ```
 
+### 时序图
+```mermaid
+sequenceDiagram
+Alice->John: Hello John, how are you?
+loop every minute
+John-->Alice: Great!
+end
+```
 
 
 ### 语法
@@ -50,7 +58,7 @@ anther task      : 24d
 	        John-->Alice: Great!
 	    end
 	```
-	------------------------------
+	
 	{% mermaid %}
 	graph TD
 	    A[Christmas] -->|Get money| B(Go shopping)
@@ -62,7 +70,8 @@ anther task      : 24d
 	------------------------------
 
 
-## MathJax数学公式
+## 数学公式
+### MathJax数学公式
 
 $$\sqrt[3]{9} = 3$$ 
 
@@ -91,6 +100,53 @@ $$\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}$$
 
 $$\fbox{a+b+c+d}$$
 
+$$\vec{a} \cdot \vec{b}=0$$
+
+
+$$
+\begin{array}{cc}
+\mathrm{Bad} & \mathrm{Better} \\
+\hline \\
+\iiint_V f(x){\rm d}z {\rm d}y {\rm d}x & \iiint_V f(x)\,{\rm d}z\,{\rm d}y\,{\rm d}x
+\end{array}
+$$
+
+$$
+\begin{array}{cc}
+\mathrm{Bad} & \mathrm{Better} \\
+\hline \\
+\int\int_S f(x)\,dy\,dx & \iint_S f(x)\,dy\,dx \\
+\int\int\int_V f(x)\,dz\,dy\,dx & \iiint_V f(x)\,dz\,dy\,dx
+\end{array}
+$$
+
+$$\require{AMScd}$
+\begin{CD}
+    A @>a>> B\\
+    @V b V V\# @VV c V\\
+    C @>>d> D
+\end{CD}$$
+
+$$
+x = a_0 + \frac{1^2}{a_1+}
+          \frac{2^2}{a_2+}
+          \frac{3^2}{a_3 +} \frac{4^4}{a_4 +} \cdots
+$$
+
+$$\int_{0}^{1}f(x)dx \sum_{1}^{2}\int_{0}^{1}f(x)dx \sum_{1}^{2}\int_{0}^{1}f(x)dx \sum_{1}^{2}\int_{0}^{1}f(x)dx \sum_{1}^{2}\int_{0}^{1}f(x)dx \sum_{1}^{2}\int_{0}^{1}f(x)dx \sum_{1}^{2}\int_{0}^{1}f(x)dx \sum_{1}^{2}\int_{0}^{1}f(x)dx \sum_{1}^{2}\int_{0}^{1}f(x)dx \sum_{1}^{2}\int_{0}^{1}f(x)dx \sum_{1}^{2}$$
+
+
+### LaTex
+
+$$ c = \sqrt{a^{2}+b_{xy}^{2} +e^{x}} $$
+
+$$E = mc^2 $$
+
+$$ \boxed{E=mc^2} $$
+
+$$\left(iD\!\!\!/+m\right)\psi = 0$$
+
+$$\dfrac{1}{2}$$
 
 ## html
 ### html嵌套
@@ -118,3 +174,4 @@ asdasdas
 - [mermaid](https://github.com/mermaid-js/mermaid)
 - [数学公式](https://www.zybuluo.com/codeep/note/163962)
 - [KATEX](https://katex.org/)
+- [flowchart.js](http://flowchart.js.org/)
