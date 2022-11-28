@@ -5,7 +5,7 @@ n=1
 while (( 1 == 1 ))
 do
 
-    pull_res=$(git pull);
+    pull_res=$(git pull origin master);
     if [ "$pull_res" != "Already up-to-date." ]
     then
         hexo clean
