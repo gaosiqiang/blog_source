@@ -8,7 +8,7 @@ do
     pull_res=$(git pull origin master);
     if [ "$pull_res" != "Already up-to-date." ]
     then
-        # hexo clean # 报错Error: EBUSY: resource busy or locked, rmdir '/blog/public/'
+        hexo clean
         hexo generate
     else
         echo 'not update';
