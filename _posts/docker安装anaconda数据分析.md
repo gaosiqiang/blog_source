@@ -133,7 +133,7 @@ c.NotebookApp.notebook_dir = '/data/python/jupyter' # 设置存储路径
 
 2、root后台启动`# jupyter notebook --allow-root`；
 
-2、CLI内两次control+c就是关闭jupyter；
+2、CLI内两次control+c就是关闭；
 
 ## 参考
 https://jupyter-notebook.readthedocs.io/en/stable/public_server.html
